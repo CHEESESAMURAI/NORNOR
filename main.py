@@ -49,7 +49,7 @@ async def start_cmd(msg: types.Message):
     us_id = msg.from_user.id
     id = msg.from_user.id
     await bot.send_message(id,te.START1_ru + str(user_name) + te.START2_ru, reply_markup=kb.menu_ru)
-    await bot.delete_message(msg.from_user.id, msg.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     if us_id not in user_id:
         user_id.append(us_id)
         print(user_id)
@@ -61,7 +61,7 @@ async def start_cmd(msg: types.Message):
     us_id = msg.from_user.id
     id = msg.from_user.id
     await bot.send_message(id,te.START1_eng + str(user_name) + te.START2_eng, reply_markup=kb.menu_eng)
-    await bot.delete_message(msg.from_user.id, msg.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     if us_id not in user_id:
         user_id.append(us_id)
         print(user_id)
@@ -73,7 +73,7 @@ async def start_cmd(msg: types.Message):
     us_id = msg.from_user.id
     id = msg.from_user.id
     await bot.send_message(id,te.START1_tur + str(user_name) + te.START2_tur, reply_markup=kb.menu_tur)
-    await bot.delete_message(msg.from_user.id, msg.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     if us_id not in user_id:
         user_id.append(us_id)
         print(user_id)
@@ -92,11 +92,32 @@ async def start_cmd(msg: types.Message):
     await bot.send_message(msg.from_user.id, te.MAILING_INFO)
     state = 2
 
-
-@dp.callback_query_handler(text='back_to_menu')
+@dp.callback_query_handler(text='back_to_lang')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.START2,reply_markup=kb.menu)
+    await bot.send_message(id,'Change language', reply_markup=kb.lang)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+
+@dp.callback_query_handler(text='back_to_menu_ru')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.START2_ru,reply_markup=kb.menu_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='back_to_menu_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.START2_eng,reply_markup=kb.menu_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='back_to_menu_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.START2_tur,reply_markup=kb.menu_tur)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
