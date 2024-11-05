@@ -124,92 +124,92 @@ async def menu(msg: types.Message):
 @dp.callback_query_handler(text='menu_1_ru')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_1_ru,reply_markup=kb.back_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_2_ru')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_2_ru,reply_markup=kb.back_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_3_ru')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_3_ru,reply_markup=kb.back_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_4_ru')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_4_ru,reply_markup=kb.back_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_5_ru')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_5_ru,reply_markup=kb.back_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_1_eng')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_1_eng,reply_markup=kb.back_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_2_eng')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_2_eng,reply_markup=kb.back_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_3_eng')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_3_eng,reply_markup=kb.back_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_4_eng')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_4_eng,reply_markup=kb.back_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_5_eng')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_5_eng,reply_markup=kb.back_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_1_tur')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_1_tur,reply_markup=kb.back_tur)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_2_tur')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_2_tur,reply_markup=kb.back_tur)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_3_tur')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_3_tur,reply_markup=kb.back_tur)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_4_tur')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_4_tur,reply_markup=kb.back_tur)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='menu_5_tur')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.send_message(id,te.menu_5_tur,reply_markup=kb.back_tur)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='mailing_ru')
 async def menu(msg: types.Message):
@@ -533,9 +533,10 @@ async def menu(msg: types.Message):
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(gg[0]) + '\n on the time : ' + '10:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(gg[0]) + '\n on the time : '+'10:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 
 @dp.callback_query_handler(text='11:00')
@@ -548,9 +549,10 @@ async def menu(msg: types.Message):
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '11:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     gg=[]
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 
 @dp.callback_query_handler(text='12:00')
@@ -563,9 +565,10 @@ async def menu(msg: types.Message):
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '12:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 
 @dp.callback_query_handler(text='13:00')
@@ -578,9 +581,10 @@ async def menu(msg: types.Message):
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '13:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 
 @dp.callback_query_handler(text='14:00')
@@ -593,9 +597,9 @@ async def menu(msg: types.Message):
     await bot.send_message(id,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '14:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 @dp.callback_query_handler(text='15:00')
 async def menu(msg: types.Message):
@@ -608,8 +612,9 @@ async def menu(msg: types.Message):
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '15:00')
     gg = []
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 
 @dp.callback_query_handler(text='16:00')
@@ -622,9 +627,10 @@ async def menu(msg: types.Message):
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '16:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 
 @dp.callback_query_handler(text='17:00')
@@ -637,9 +643,10 @@ async def menu(msg: types.Message):
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
                                gg[0]) + '\n on the time : ' + '17:00')
-    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
+    await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu_eng)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
     gg.clear()
 
 
