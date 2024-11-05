@@ -47,7 +47,7 @@ async def start_cmd(msg: types.Message):
     global user_id
     user_name = msg.from_user.username
     us_id = msg.from_user.id
-    id = msg.chat.id
+    id = msg.from_user.id
     await bot.send_message(id,te.START1_ru + str(user_name) + te.START2_ru, reply_markup=kb.menu_ru)
     await bot.delete_message(msg.from_user.id, msg.message_id)
     if us_id not in user_id:
@@ -59,7 +59,7 @@ async def start_cmd(msg: types.Message):
     global user_id
     user_name = msg.from_user.username
     us_id = msg.from_user.id
-    id = msg.chat.id
+    id = msg.from_user.id
     await bot.send_message(id,te.START1_eng + str(user_name) + te.START2_eng, reply_markup=kb.menu_eng)
     await bot.delete_message(msg.from_user.id, msg.message_id)
     if us_id not in user_id:
@@ -71,7 +71,7 @@ async def start_cmd(msg: types.Message):
     global user_id
     user_name = msg.from_user.username
     us_id = msg.from_user.id
-    id = msg.chat.id
+    id = msg.from_user.id
     await bot.send_message(id,te.START1_tur + str(user_name) + te.START2_tur, reply_markup=kb.menu_tur)
     await bot.delete_message(msg.from_user.id, msg.message_id)
     if us_id not in user_id:
