@@ -121,35 +121,156 @@ async def menu(msg: types.Message):
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
-@dp.callback_query_handler(text='menu_1')
-async def menu(msg: types.Message):
-    global state
-    state = 6
-    id = msg.from_user.id
-    await bot.send_message(id,te.menu_1,reply_markup=kb.back)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='mailing')
+@dp.callback_query_handler(text='menu_1_ru')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.MAILING_TEXT,reply_markup=kb.mailing)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_1_ru,reply_markup=kb.back_ru)
+
+@dp.callback_query_handler(text='menu_2_ru')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_2_ru,reply_markup=kb.back_ru)
+
+@dp.callback_query_handler(text='menu_3_ru')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_3_ru,reply_markup=kb.back_ru)
+
+@dp.callback_query_handler(text='menu_4_ru')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_4_ru,reply_markup=kb.back_ru)
+
+@dp.callback_query_handler(text='menu_5_ru')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_5_ru,reply_markup=kb.back_ru)
+
+@dp.callback_query_handler(text='menu_1_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_1_eng,reply_markup=kb.back_eng)
+
+@dp.callback_query_handler(text='menu_2_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_2_eng,reply_markup=kb.back_eng)
+
+@dp.callback_query_handler(text='menu_3_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_3_eng,reply_markup=kb.back_eng)
+
+@dp.callback_query_handler(text='menu_4_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_4_eng,reply_markup=kb.back_eng)
+
+@dp.callback_query_handler(text='menu_5_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_5_eng,reply_markup=kb.back_eng)
+
+@dp.callback_query_handler(text='menu_1_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_1_tur,reply_markup=kb.back_tur)
+
+@dp.callback_query_handler(text='menu_2_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_2_tur,reply_markup=kb.back_tur)
+
+@dp.callback_query_handler(text='menu_3_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_3_tur,reply_markup=kb.back_tur)
+
+@dp.callback_query_handler(text='menu_4_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_4_tur,reply_markup=kb.back_tur)
+
+@dp.callback_query_handler(text='menu_5_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.send_message(id,te.menu_5_tur,reply_markup=kb.back_tur)
+
+@dp.callback_query_handler(text='mailing_ru')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.MAILING_TEXT,reply_markup=kb.mailing_ru)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='mailing_eng')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.MAILING_TEXT_eng,reply_markup=kb.mailing_eng)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='mailing_tur')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.MAILING_TEXT_tur,reply_markup=kb.mailing_tur)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 
-@dp.callback_query_handler(text='off_on_mailing')
+@dp.callback_query_handler(text='off_on_mailing_ru')
 async def menu(msg: types.Message):
     global mailing
     id = msg.from_user.id
     mailing+=1
     if mailing % 2 ==1:
-        await bot.send_message(id, te.ON_MAILING, reply_markup=kb.mailing)
+        await bot.send_message(id, te.ON_MAILING, reply_markup=kb.mailing_ru)
         await bot.delete_message(msg.from_user.id, msg.message.message_id)
     elif mailing % 2 ==0:
-        await bot.send_message(id, te.OFF_MAILING, reply_markup=kb.mailing)
+        await bot.send_message(id, te.OFF_MAILING, reply_markup=kb.mailing_ru)
         await bot.delete_message(msg.from_user.id, msg.message.message_id)
     if mailing == 10:
         mailing = 0
 
+@dp.callback_query_handler(text='off_on_mailing_eng')
+async def menu(msg: types.Message):
+    global mailing
+    id = msg.from_user.id
+    mailing+=1
+    if mailing % 2 ==1:
+        await bot.send_message(id, te.ON_MAILING_eng, reply_markup=kb.mailing_eng)
+        await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    elif mailing % 2 ==0:
+        await bot.send_message(id, te.OFF_MAILING_eng, reply_markup=kb.mailing_eng)
+        await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    if mailing == 10:
+        mailing = 0
+
+@dp.callback_query_handler(text='off_on_mailing_tur')
+async def menu(msg: types.Message):
+    global mailing
+    id = msg.from_user.id
+    mailing+=1
+    if mailing % 2 ==1:
+        await bot.send_message(id, te.ON_MAILING_tur, reply_markup=kb.mailing_tur)
+        await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    elif mailing % 2 ==0:
+        await bot.send_message(id, te.OFF_MAILING_tur, reply_markup=kb.mailing_tur)
+        await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    if mailing == 10:
+        mailing = 0
 
 #Даты
 @dp.callback_query_handler(text='1')
@@ -409,9 +530,9 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
 
     await bot.send_message(7222770656,
-                           te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(gg[0]) + '\n на время : ' + '10:00')
+                           te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(gg[0]) + '\n on the time : ' + '10:00')
     await bot.send_message(id,
-                           te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(gg[0]) + '\n на время : '+'10:00')
+                           te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(gg[0]) + '\n on the time : '+'10:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -423,10 +544,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '11:00')
+                               gg[0]) + '\n on the time : ' + '11:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '11:00')
+                               gg[0]) + '\n on the time : ' + '11:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     gg=[]
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -438,10 +559,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '12:00')
+                               gg[0]) + '\n on the time : ' + '12:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '12:00')
+                               gg[0]) + '\n on the time : ' + '12:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -453,10 +574,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '13:00')
+                               gg[0]) + '\n on the time : ' + '13:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '13:00')
+                               gg[0]) + '\n on the time : ' + '13:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -468,10 +589,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '14:00')
+                               gg[0]) + '\n on the time : ' + '14:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '14:00')
+                               gg[0]) + '\n on the time : ' + '14:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
@@ -482,10 +603,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '15:00')
+                               gg[0]) + '\n on the time : ' + '15:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '15:00')
+                               gg[0]) + '\n on the time : ' + '15:00')
     gg = []
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -497,10 +618,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '16:00')
+                               gg[0]) + '\n on the time : ' + '16:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '16:00')
+                               gg[0]) + '\n on the time : ' + '16:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -512,10 +633,10 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(7222770656,
                            te.FINAL_EXCURS + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '17:00')
+                               gg[0]) + '\n on the time : ' + '17:00')
     await bot.send_message(id,
                            te.FINAL_EXCURS  + ' ' + str(gg[1]) + '\n в ' + str(
-                               gg[0]) + '\n на время : ' + '17:00')
+                               gg[0]) + '\n on the time : ' + '17:00')
     await bot.send_message(id, te.SUCCES_ZAP, reply_markup=kb.menu)
     gg = []
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -528,84 +649,84 @@ async def menu(msg: types.Message):
 @dp.callback_query_handler(text='jan')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Января')
+    gg.append('January')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='feb')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Февраля')
+    gg.append('February')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='mar')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Марта')
+    gg.append('Martha')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='apr')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Апреля')
+    gg.append('April')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='mai')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Мая')
+    gg.append('May')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='iun')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Июня')
+    gg.append('June')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='iul')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Июля')
+    gg.append('July')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='avg')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Августа')
+    gg.append('August')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='sent')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Сентября')
+    gg.append('September')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='okt')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Октября')
+    gg.append('October')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='noyab')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Ноября')
+    gg.append('November')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 @dp.callback_query_handler(text='dec')
 async def menu(msg: types.Message):
     global gg
-    gg.append('Декабря')
+    gg.append('December')
     id = msg.from_user.id
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)

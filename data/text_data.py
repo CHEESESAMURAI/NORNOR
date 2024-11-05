@@ -22,6 +22,24 @@ START2_tur = ('🌿 PEMBE EJDERHA bot mağazamıza hoş geldiniz! Mutluyuz'
              'Herhangi bir sorunuz varsa desteğimiz her zaman iletişim halindedir. '
              'Alışverişinizin tadını çıkarın! 🌱')
 
+menu_1_ru = 'Текст'
+menu_2_ru = 'Текст'
+menu_3_ru = 'Текст'
+menu_4_ru = 'Текст'
+menu_5_ru = 'Текст'
+
+menu_1_eng = 'Текст'
+menu_2_eng = 'Текст'
+menu_3_eng = 'Текст'
+menu_4_eng = 'Текст'
+menu_5_eng = 'Текст'
+
+menu_1_tur = 'Текст'
+menu_2_tur = 'Текст'
+menu_3_tur = 'Текст'
+menu_4_tur = 'Текст'
+menu_5_tur = 'Текст'
+
 EXCURSION_DATE = 'Выберите дату'
 EXCURSION_MOUNT = 'Выберите месяц'
 EXCURSION_TIME = 'Выберите время'
